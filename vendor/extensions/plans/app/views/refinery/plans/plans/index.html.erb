@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="plans">
+    <% @plans.each do |plan| %>
+      <li>
+        <%= link_to plan.name, refinery.plans_plan_path(plan) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

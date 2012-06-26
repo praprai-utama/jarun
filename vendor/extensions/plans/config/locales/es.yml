@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      plans:
+        title: Plans
+#        article: masculino/femenino
+    plans:
+      admin:
+        plans:
+          actions:
+            create_new: Crear nuevo plan
+            reorder: Reordenar plans
+            reorder_done: Reordenación de plans completada
+          records:
+            title: Plans
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay plans todavía. Pulsa en "Crear nuevo Plan" para crear tu primer plan.
+          plan:
+            view_live_html: Ver este plan como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este plan
+            delete: Borrar este plan para siempre
+      plans:
+        show:
+          other: Otros plans
+  activerecord:
+    attributes:
+      'refinery/plans/plan':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

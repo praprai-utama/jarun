@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      schedules:
+        title: Schedules
+#        article: masculino/femenino
+    schedules:
+      admin:
+        schedules:
+          actions:
+            create_new: Crear nuevo schedule
+            reorder: Reordenar schedules
+            reorder_done: Reordenación de schedules completada
+          records:
+            title: Schedules
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay schedules todavía. Pulsa en "Crear nuevo Schedule" para crear tu primer schedule.
+          schedule:
+            view_live_html: Ver este schedule como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este schedule
+            delete: Borrar este schedule para siempre
+      schedules:
+        show:
+          other: Otros schedules
+  activerecord:
+    attributes:
+      'refinery/schedules/schedule':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      timetables:
+        title: Timetables
+    timetables:
+      admin:
+        timetables:
+          actions:
+            create_new: Maak een nieuwe Timetable
+            reorder: Wijzig de volgorde van de Timetables
+            reorder_done: Klaar met het wijzingen van de volgorde van de Timetables
+          records:
+            title: Timetables
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Timetables. Druk op 'Maak een nieuwe Timetable' om de eerste aan te maken.
+          timetable:
+            view_live_html: Bekijk deze timetable op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze timetable
+            delete: Verwijder deze timetable voor eeuwig
+      timetables:
+        show:
+          other: Andere Timetables
+  activerecord:
+    attributes:
+      'refinery/timetables/timetable':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

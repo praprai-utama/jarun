@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      schedules:
+        title: Schedules
+    schedules:
+      admin:
+        schedules:
+          actions:
+            create_new: Add New Schedule
+            reorder: Reorder Schedules
+            reorder_done: Done Reordering Schedules
+          records:
+            title: Schedules
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Schedules yet. Click "Add New Schedule" to add your first schedule.
+          schedule:
+            view_live_html: View this schedule live <br/><em>(opens in a new window)</em>
+            edit: Edit this schedule
+            delete: Remove this schedule forever
+      schedules:
+        show:
+          other: Other Schedules
+  activerecord:
+    attributes:
+      'refinery/schedules/schedule':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

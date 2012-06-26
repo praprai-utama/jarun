@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      schedules:
+        title: Schedules
+    schedules:
+      admin:
+        schedules:
+          actions:
+            create_new: Lag en ny Schedule
+            reorder: Endre rekkefølgen på Schedules
+            reorder_done: Ferdig å endre rekkefølgen Schedules
+          records:
+            title: Schedules
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Schedules enda. Klikk på "Lag en ny Schedule" for å legge til din første schedule.
+          schedule:
+            view_live_html: Vis hvordan denne schedule ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne schedule
+            delete: Fjern denne schedule permanent
+      schedules:
+        show:
+          other: Andre Schedules
+  activerecord:
+    attributes:
+      'refinery/schedules/schedule':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

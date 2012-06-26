@@ -1,0 +1,20 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(timetable) -%>">
+  <span class='title'>
+    <%= timetable.name %>
+
+  </span>
+  <span class='actions'>
+    
+    <%= link_to refinery_icon_tag("application_go.png"), refinery.timetables_timetable_path(timetable),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    
+    <%= link_to refinery_icon_tag("application_edit.png"), refinery.edit_timetables_admin_timetable_path(timetable),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), refinery.timetables_admin_timetable_path(timetable),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'refinery.admin.delete', :title => timetable.name),
+        :method => :delete %>
+  </span>
+</li>

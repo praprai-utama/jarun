@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @plan.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @plan.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Datetime</h1>
+    <p>
+      <%=raw @plan.datetime %>
+    </p>
+  </section>
+  <section>
+    <h1>Upright</h1>
+    <p>
+      <%=raw @plan.upright %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @plan.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @plan.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="plans">
+      <% @plans.each do |plan| %>
+        <li>
+          <%= link_to plan.name, refinery.plans_plan_path(plan) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

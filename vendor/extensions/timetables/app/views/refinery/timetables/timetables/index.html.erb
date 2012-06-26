@@ -1,0 +1,28 @@
+<% content_for :body do %>
+  <ul id="timetables">
+    <% @timetables.each do |timetable| %>
+      <li>
+        <%= link_to timetable.name, refinery.timetables_timetable_path(timetable) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>
+
+
+<section id="body_content">
+  <section id="body">
+    <div id="timetables">
+      <% @timetables.each do |timetable| %>
+      <div class=timetable">
+      end
+      <%= image_fu timetable.photo, "600x600", class: "image-align-#{cycle("left","right")}" %>
+      <h1><%= timetable.name %></h1>
+      <% raw timetable.description %>
+      <p class="more_info"><%= link_to "More Information", refinery.timetables_timetables_path %></p>
+      <% end %>
+      </div> 
+    </div>
+  </section>
+</section>

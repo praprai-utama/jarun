@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      timetables:
+        title: Timetables
+#        article: masculino/femenino
+    timetables:
+      admin:
+        timetables:
+          actions:
+            create_new: Crear nuevo timetable
+            reorder: Reordenar timetables
+            reorder_done: Reordenación de timetables completada
+          records:
+            title: Timetables
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay timetables todavía. Pulsa en "Crear nuevo Timetable" para crear tu primer timetable.
+          timetable:
+            view_live_html: Ver este timetable como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este timetable
+            delete: Borrar este timetable para siempre
+      timetables:
+        show:
+          other: Otros timetables
+  activerecord:
+    attributes:
+      'refinery/timetables/timetable':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

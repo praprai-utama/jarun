@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Schedules::Admin::SchedulesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.schedules_admin_schedules_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_schedules_admin_schedule_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Schedules::Admin::SchedulesController.sortable? && ::Refinery::Schedules::Schedule.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Schedules"),
+                 refinery.schedules_admin_schedules_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Schedules"),
+                 refinery.schedules_admin_schedules_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      schedules:
+        title: Schedules
+    schedules:
+      admin:
+        schedules:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Schedule
+            reorder: Réordonner les Schedules
+            reorder_done: Fin de réordonnancement des Schedules
+          records:
+            title: Schedules
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Schedule. Cliquer sur "Créer un(e) nouve(au/l/lle) Schedule" pour créer votre premi(er/ère) schedule.'
+          schedule:
+            view_live_html: Voir ce(t/tte) schedule <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) schedule
+            delete: Supprimer définitivement ce(t/tte) schedule
+      schedules:
+        show:
+          other: Autres Schedules
+  activerecord:
+    attributes:
+      'refinery/schedules/schedule':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

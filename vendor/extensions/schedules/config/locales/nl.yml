@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      schedules:
+        title: Schedules
+    schedules:
+      admin:
+        schedules:
+          actions:
+            create_new: Maak een nieuwe Schedule
+            reorder: Wijzig de volgorde van de Schedules
+            reorder_done: Klaar met het wijzingen van de volgorde van de Schedules
+          records:
+            title: Schedules
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Schedules. Druk op 'Maak een nieuwe Schedule' om de eerste aan te maken.
+          schedule:
+            view_live_html: Bekijk deze schedule op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze schedule
+            delete: Verwijder deze schedule voor eeuwig
+      schedules:
+        show:
+          other: Andere Schedules
+  activerecord:
+    attributes:
+      'refinery/schedules/schedule':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

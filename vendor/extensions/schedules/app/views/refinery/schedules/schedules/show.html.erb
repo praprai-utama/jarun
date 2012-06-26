@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @schedule.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @schedule.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Datetime</h1>
+    <p>
+      <%=raw @schedule.datetime %>
+    </p>
+  </section>
+  <section>
+    <h1>Upright</h1>
+    <p>
+      <%=raw @schedule.upright %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @schedule.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @schedule.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="schedules">
+      <% @schedules.each do |schedule| %>
+        <li>
+          <%= link_to schedule.name, refinery.schedules_schedule_path(schedule) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      timetables:
+        title: Timetables
+    timetables:
+      admin:
+        timetables:
+          actions:
+            create_new: Add New Timetable
+            reorder: Reorder Timetables
+            reorder_done: Done Reordering Timetables
+          records:
+            title: Timetables
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Timetables yet. Click "Add New Timetable" to add your first timetable.
+          timetable:
+            view_live_html: View this timetable live <br/><em>(opens in a new window)</em>
+            edit: Edit this timetable
+            delete: Remove this timetable forever
+      timetables:
+        show:
+          other: Other Timetables
+  activerecord:
+    attributes:
+      'refinery/timetables/timetable':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

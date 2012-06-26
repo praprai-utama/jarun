@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      timetables:
+        title: Timetables
+    timetables:
+      admin:
+        timetables:
+          actions:
+            create_new: Lag en ny Timetable
+            reorder: Endre rekkefølgen på Timetables
+            reorder_done: Ferdig å endre rekkefølgen Timetables
+          records:
+            title: Timetables
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Timetables enda. Klikk på "Lag en ny Timetable" for å legge til din første timetable.
+          timetable:
+            view_live_html: Vis hvordan denne timetable ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne timetable
+            delete: Fjern denne timetable permanent
+      timetables:
+        show:
+          other: Andre Timetables
+  activerecord:
+    attributes:
+      'refinery/timetables/timetable':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      plans:
+        title: Plans
+    plans:
+      admin:
+        plans:
+          actions:
+            create_new: Maak een nieuwe Plan
+            reorder: Wijzig de volgorde van de Plans
+            reorder_done: Klaar met het wijzingen van de volgorde van de Plans
+          records:
+            title: Plans
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Plans. Druk op 'Maak een nieuwe Plan' om de eerste aan te maken.
+          plan:
+            view_live_html: Bekijk deze plan op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze plan
+            delete: Verwijder deze plan voor eeuwig
+      plans:
+        show:
+          other: Andere Plans
+  activerecord:
+    attributes:
+      'refinery/plans/plan':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

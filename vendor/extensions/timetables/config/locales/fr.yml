@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      timetables:
+        title: Timetables
+    timetables:
+      admin:
+        timetables:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Timetable
+            reorder: Réordonner les Timetables
+            reorder_done: Fin de réordonnancement des Timetables
+          records:
+            title: Timetables
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Timetable. Cliquer sur "Créer un(e) nouve(au/l/lle) Timetable" pour créer votre premi(er/ère) timetable.'
+          timetable:
+            view_live_html: Voir ce(t/tte) timetable <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) timetable
+            delete: Supprimer définitivement ce(t/tte) timetable
+      timetables:
+        show:
+          other: Autres Timetables
+  activerecord:
+    attributes:
+      'refinery/timetables/timetable':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description

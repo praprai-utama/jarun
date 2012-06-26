@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      plans:
+        title: Plans
+    plans:
+      admin:
+        plans:
+          actions:
+            create_new: Lag en ny Plan
+            reorder: Endre rekkefølgen på Plans
+            reorder_done: Ferdig å endre rekkefølgen Plans
+          records:
+            title: Plans
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Plans enda. Klikk på "Lag en ny Plan" for å legge til din første plan.
+          plan:
+            view_live_html: Vis hvordan denne plan ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne plan
+            delete: Fjern denne plan permanent
+      plans:
+        show:
+          other: Andre Plans
+  activerecord:
+    attributes:
+      'refinery/plans/plan':
+        name: Name
+        datetime: Datetime
+        upright: Upright
+        photo: Photo
+        description: Description
